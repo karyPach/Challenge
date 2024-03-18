@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador Alura</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilos.css">
+</head>
+<body>
+    <header>
+        <div class="caja">
+            <div class="header_img">
+                <img src="./img/logo.svg" alt="Logo Alura Latam">
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="caja">
+            <div class="encriptador">
+                <form class="encriptador_form">
+                    <div class="textoEntrada">
+                        <textarea name="text_in_area" id="texto" placeholder="Ingrese el texto aquí" required></textarea>
+                        <div class="textArea">
+                            <div class="informacion">
+                                <img src="./img/exclamacion.svg" alt="">
+                                <p id="warning">Solo letras minúsculas y sin acentos</p>
+                            </div>
+                            <div class="bloqueBotones">
+                                <input id="enc" type="button" value="Encriptar">
+                                <input id="des" type="button" value="Desencriptar">
+                            </div> 
+                        </div>
+                    </div>
+                </form>
+
+                <div class="textoSalida">
+                    <div class="salidaCon">
+                        <div class="contenidoC" id="default">
+                            <div class="imagenMuneco">
+                                <img src="./img/muneco.svg" alt="Imagen de animada">
+                            </div><p>Ningún mensaje fue encontrado</p>
+                            <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+                        <div class="contenidoC invisible" id="result">
+                            <textarea name="textarea" id="texto_out" disabled></textarea>
+                            <button id="copiar">Copiar</button>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </main>
+  
+    <script src="./js/encriptador.js"></script>
+</body>
+</html>
